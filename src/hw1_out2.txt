@@ -1,0 +1,73 @@
+AddSeller appleIPhone amazon 128.79 9.50 30000
+AddSeller appleIPhone wish 79.99 25.00 3000
+AddSeller appleIPhone newegg 150.55 5.00 550
+AddSeller appleIPhone verizon 135.82 3.18 4000
+AddSeller appleIPhone hhgregg 95.25 5.75 820
+AddSeller earBuds amazon 13.50 6.00 45000
+AddSeller earBuds newegg 35.22 2.00 1250
+AddSeller earBuds wish 10.57 2.00 13000
+AddSeller earBuds hhgregg 20.75 4.25 0 NonPositiveQuantityError
+AddSeller earBuds hhgregg 20.75 4.25 125
+AddSeller earBuds verizon 13.99 3.00 732
+AddSeller keyboard wish 20.39 7.00 6372
+AddSeller keyboard amazon 16.99 7.00 27001
+AddSeller keyboard newegg 32.89 7.00 3247
+AddSeller keyboard verizon 29.50 7.00 1107
+AddSeller keyboard hhgregg 14.00 7.00 75
+RemoveSeller earBuds jonnys NonExistingSellerError
+DisplaySellerList appleIPhone
+    seller  productPrice  shippingCost  totalCost
+   hhgregg         95.25          5.75     101.00
+      wish         79.99         25.00     104.99
+    amazon        128.79          9.50     138.29
+   verizon        135.82          3.18     139.00
+    newegg        150.55          5.00     155.55
+DisplaySellerList earBuds
+    seller  productPrice  shippingCost  totalCost
+      wish         10.57          2.00      12.57
+   verizon         13.99          3.00      16.99
+    amazon         13.50          6.00      19.50
+   hhgregg         20.75          4.25      25.00
+    newegg         35.22          2.00      37.22
+DisplaySellerList keyboard
+    seller  productPrice  shippingCost  totalCost
+   hhgregg         14.00          7.00      21.00
+    amazon         16.99          7.00      23.99
+      wish         20.39          7.00      27.39
+   verizon         29.50          7.00      36.50
+    newegg         32.89          7.00      39.89
+CustomerPurchase earBuds verizon 425 307
+CustomerPurchase keyboard hhgregg 75 0
+DepletedInventoryRemoveSeller keyboard hhgregg
+DisplaySellerList keyboard
+    seller  productPrice  shippingCost  totalCost
+    amazon         16.99          7.00      23.99
+      wish         20.39          7.00      27.39
+   verizon         29.50          7.00      36.50
+    newegg         32.89          7.00      39.89
+CustomerPurchase earBuds verizon 350 NotEnoughInventoryError
+CustomerPurchase earBuds verizon 307 0
+DepletedInventoryRemoveSeller earBuds verizon
+CustomerPurchase appleIPhone amazon 2 29998
+DisplaySellerList earBuds
+    seller  productPrice  shippingCost  totalCost
+      wish         10.57          2.00      12.57
+    amazon         13.50          6.00      19.50
+   hhgregg         20.75          4.25      25.00
+    newegg         35.22          2.00      37.22
+AddSeller keyboard hhgregg 14.00 7.00 27
+CustomerPurchase keyboard hhgregg 43 NotEnoughInventoryError
+DisplaySellerList keyboard
+    seller  productPrice  shippingCost  totalCost
+   hhgregg         14.00          7.00      21.00
+    amazon         16.99          7.00      23.99
+      wish         20.39          7.00      27.39
+   verizon         29.50          7.00      36.50
+    newegg         32.89          7.00      39.89
+IncreaseInventory keyboard hhgregg 50 77
+RemoveSeller earBuds amazon
+DisplaySellerList earBuds
+    seller  productPrice  shippingCost  totalCost
+      wish         10.57          2.00      12.57
+   hhgregg         20.75          4.25      25.00
+    newegg         35.22          2.00      37.22

@@ -1,0 +1,29 @@
+AddSeller appleIPhone amazon 128.79 5.00 30000
+AddSeller appleIPhone wish 79.99 5.00 3000
+AddSeller appleIPhone newegg 150.55 5.00 550
+AddSeller earBuds amazon 13.50 2.00 45000
+AddSeller earBuds newegg 35.22 2.00 1250
+AddSeller earBuds wish 10.57 2.00 13000
+AddSeller keyboard wish 20.39 7.00 6372
+AddSeller keyboard amazon 16.99 7.00 27001
+AddSeller keyboard newegg 32.89 7.00 3247
+DisplaySellerList appleIPhone
+    seller  productPrice  shippingCost  totalCost
+      wish         79.99          5.00      84.99
+    amazon        128.79          5.00     133.79
+    newegg        150.55          5.00     155.55
+DisplaySellerList earBuds
+    seller  productPrice  shippingCost  totalCost
+      wish         10.57          2.00      12.57
+    amazon         13.50          2.00      15.50
+    newegg         35.22          2.00      37.22
+DisplaySellerList keyboard
+    seller  productPrice  shippingCost  totalCost
+    amazon         16.99          7.00      23.99
+      wish         20.39          7.00      27.39
+    newegg         32.89          7.00      39.89
+RemoveSeller earBuds amazon
+DisplaySellerList earBuds
+    seller  productPrice  shippingCost  totalCost
+      wish         10.57          2.00      12.57
+    newegg         35.22          2.00      37.22

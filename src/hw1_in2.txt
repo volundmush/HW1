@@ -1,0 +1,33 @@
+AddSeller appleIPhone amazon 128.79 9.50 30000
+AddSeller appleIPhone wish 79.99 25.00 3000
+AddSeller appleIPhone newegg 150.55 5.00 550
+AddSeller appleIPhone verizon 135.82 3.18 4000
+AddSeller appleIPhone hhgregg 95.25 5.75 820
+AddSeller earBuds amazon 13.50 6.00 45000
+AddSeller earBuds newegg 35.22 2.00 1250
+AddSeller earBuds wish 10.57 2.00 13000
+AddSeller earBuds hhgregg 20.75 4.25 0
+AddSeller earBuds hhgregg 20.75 4.25 125
+AddSeller earBuds verizon 13.99 3.00 732
+AddSeller keyboard wish 20.39 7.00 6372
+AddSeller keyboard amazon 16.99 7.00 27001
+AddSeller keyboard newegg 32.89 7.00 3247
+AddSeller keyboard verizon 29.50 7.00 1107
+AddSeller keyboard hhgregg 14.00 7.00 75
+RemoveSeller earBuds jonnys
+DisplaySellerList appleIPhone
+DisplaySellerList earBuds
+DisplaySellerList keyboard
+CustomerPurchase earBuds verizon 425
+CustomerPurchase keyboard hhgregg 75
+DisplaySellerList keyboard
+CustomerPurchase earBuds verizon 350
+CustomerPurchase earBuds verizon 307
+CustomerPurchase appleIPhone amazon 2
+DisplaySellerList earBuds
+AddSeller keyboard hhgregg 14.00 7.00 27
+CustomerPurchase keyboard hhgregg 43
+DisplaySellerList keyboard
+IncreaseInventory keyboard hhgregg 50
+RemoveSeller earBuds amazon
+DisplaySellerList earBuds
